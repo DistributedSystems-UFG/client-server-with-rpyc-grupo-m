@@ -19,8 +19,17 @@ class DBList(rpyc.Service):
     except ValueError:
         return f"{data} not found in the array."
 
-  def exposed_remove
-    
+  def exposed_remove(self, data):
+    if data in self.value:
+        self.value.remove(data)
+        return f"Element {data} removed from the array."
+    else:
+        return f"Element {data} not found in the array. Nothing removed."
+      
+  def exposed_sort(self):
+    self.value.sort()
+    return "Array sorted in ascending order."
+
 
 if __name__ == "__main__":
   server = ThreadedServer(DBList(), port = PORT)
