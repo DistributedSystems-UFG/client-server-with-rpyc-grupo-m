@@ -1,1 +1,2 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/3FCZCoOU)
+Tarefa de Programação: Cliente-Servidor com RPC integrado na linguagem (RPyC) (AP 3.1)
+Alunos: Murilo Mesquita e Thor Franco Brenner
