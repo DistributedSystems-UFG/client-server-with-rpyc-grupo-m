@@ -13,10 +13,13 @@ class DBList(rpyc.Service):
     return self.value
     
   def exposed_search(self, data):
-        if data in self.value:
-            return f"{data} found in the array."
-        else:
-            return f"{data} not found in the array."
+    try:
+        index = self.value.index(data)
+        return f"{data} found at position {index} in the array."
+    except ValueError:
+        return f"{data} not found in the array."
+
+  def exposed_remove
     
 
 if __name__ == "__main__":
